@@ -1,0 +1,8 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+WORKDIR /app/src/ThingTemplate.Web
+
+# Required inside Docker, otherwise file-change events may not trigger
+ENV DOTNET_USE_POLLING_FILE_WATCHER 1
+
+# This will build and launch the server in a loop, restarting whenever a *.cs file changes
+ENTRYPOINT dotnet watch run

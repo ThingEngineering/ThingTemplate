@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Freddie",
+  "classifications": [ "Web/MVC/Razor Pages" ],
+  "name": "Thing Template",
+  "identity": "ThingTemplate",
+  "shortName": "thing",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "ThingTemplate",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            ".git/**",
+            ".vs/**",
+            "**/node_modules/**"
+          ]
+        }
+      ]
+    }
+  ]
+}
